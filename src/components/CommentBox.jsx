@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useRef, useState } from "react";
 import TextareaAutosize from "react-textarea-autosize";
 import useClickOutside from "../hooks/useClickOutside";
 
-function CommentBox() {
+function CommentBox({autoFocus}) {
   const [isHover, setIsHover] = useState(false);
   const commentBoxRef = useRef(null);
     const [commentText, setSommentText] = useState('')
@@ -30,6 +31,7 @@ function CommentBox() {
         onFocus={() => setIsHover(true)}
         onChange={e => setSommentText(e.target.value)}
         value={commentText}
+        autoFocus={!!autoFocus}
       />
 
       {isHover && (

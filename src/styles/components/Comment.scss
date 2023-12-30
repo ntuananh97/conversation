@@ -1,0 +1,52 @@
+.comment-item {
+  &:not(:last-child) {
+    border-bottom: 1px solid;
+    margin-top: 15px;
+    @apply border-border-color-gray;
+  }
+
+
+  &__image {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 35px;
+      bottom: 13px;
+      background-color: transparent;
+      right: 0;
+      border-left: 1px solid;
+      border-bottom: 1px solid;
+      @apply border-border-color-gray;
+      border-bottom-left-radius: 6px;
+    }
+  }
+
+
+  &__btn {
+    @apply text-color-scheme-l5;
+    font-size: 14px;
+  }
+
+  &__btn {
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+
+  &__dot {
+    display: flex;
+    align-items: center;
+
+    font-weight: 900;
+    color: #d4d6d7;
+    // &::after {
+    //     content: '.';
+    //     font-weight: 900;
+    //     color: #d4d6d7;
+    // }
+  }
+}

@@ -11,7 +11,8 @@ export default {
         'color-scheme-l5': '#666666',
         'color-scheme-l6': '#070707',
         'color-scheme-l11': 'rgba(7,7,7,0.05)',
-        'border-color-gray': '#e3e3e3'
+        'border-color-gray': '#e3e3e3',
+        'border-color-muted': '#373e44'
       },
       boxShadow: {
         'dropdown': '0 2px 20px 0 rgba(0,0,0,.07)'
